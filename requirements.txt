@@ -1,0 +1,16 @@
+# In the reproduction description the build target that triggers the error includes the
+# following requirements:
+#
+#    requirement("google-auth"),
+#    requirement("google-auth-httplib2"),
+#    requirement("google-api-core"),
+#    requirement("google-api-python-client"),
+#    requirement("python-dateutil"),
+#
+# The should be included as dependencies below at the correct versions:
+#
+google-auth==1.27.1
+google-auth-httplib2==0.1.0
+google-api-core[grpc,grpcgcp]==1.26.1
+google-api-python-client==2.0.2
+python-dateutil==2.8.1
